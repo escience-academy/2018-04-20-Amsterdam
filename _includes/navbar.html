@@ -12,7 +12,7 @@
       </button>
 
       {% comment %} Select what logo to display. {% endcomment %}
-      <a href="{{ site.swc_site }}" class="pull-left">
+      <a href="{{ site.nlesc_site }}" class="pull-left">
         <img class="navbar-logo" src="{{ page.root }}/assets/img/escience-logo-cyanblack.png" alt="Software Carpentry logo" />
       </a>
 
@@ -24,7 +24,7 @@
       <ul class="nav navbar-nav">
 
     {% comment %} Always show code of conduct. {% endcomment %}
-        <li><a href="https://github.com/NLeSC/code-of-conduct/blob/master/README.md">Code of Conduct</a></li>
+        <li><a href="{{site.c_of_c}}">Code of Conduct</a></li>
 
     {% comment %} Show setup instructions, reference guide, and lesson episodes for lessons. {% endcomment %}
         {% if site.kind == "lesson" %}
